@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Sukki Teenoi Menu</title>
+  </head>
+  <body>
+    <div class="Logo">
+      <img src="image/logo.png" width="100px" />
+      <h1>Sukki Teenoi Menu (clone) </h1>
+    </div>
+
+    <div class="dish"></div>
+
+    <div class="container">
+      <h3>Please click the picture to choose Menu</h3>
+
+      <div class="imgfood">
+        <div class="menu-item">
+          <img
+            src="image/1.jpg"
+            alt="ลูกชิ้นชีส"
+            data-price="45"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>ลูกชิ้นชีส</h2>
+          <p>45 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/2.jpg"
+            alt="หมูเด้ง"
+            data-price="45"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>หมูเด้ง</h2>
+          <p>45 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/3.jpg"
+            alt="หมูไข่ลาวา"
+            data-price="35"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>หมูไข่ลาวา</h2>
+          <p>35 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/4.jpg"
+            alt="ไก่ไข่ลาวา"
+            data-price="35"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>ไก่ไข่ลาวา</h2>
+          <p>35 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/5.jpg"
+            alt="หมูสามชั้น"
+            data-price="25"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>หมูสามชั้น</h2>
+          <p>25 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/6.jpg"
+            alt="ชีส"
+            data-price="29"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>ชีส</h2>
+          <p>25 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/7.jpg"
+            alt="เนื้อ"
+            data-price="40"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>เนื้อ</h2>
+          <p>40 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/10.jpg"
+            alt="กุ้งขาว"
+            data-price="89"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>กุ้งขาว</h2>
+          <p>89 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/12.jpg"
+            alt="ปลาหมึก"
+            data-price="79"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>ปลาหมึก</h2>
+          <p>79 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/13.jpg"
+            alt="บะหมี่หยก"
+            data-price="20"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>บะหมี่หยก</h2>
+          <p>20 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/14.jpg"
+            alt="ปลาดอลลี่"
+            data-price="49"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>ปลาดอลลี่</h2>
+          <p>49 THB</p>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="image/15.jpg"
+            alt="สันคอหมู"
+            data-price="35"
+            class="addOrderButton"
+            style="cursor: pointer"
+          />
+          <h2>สันคอหมู</h2>
+          <p>35 THB</p>
+        </div>
+
+
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="order-list" class="order-list"></div>
+        <button id="save-button">Confirm Order</button>
+        <button id="clear-button">Clear Order</button>
+
+        <p id="total-price"><b>Total :</b> 0 THB</p>
+
+        <button id="pay-button">Pay the Bill</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

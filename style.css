@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  margin: 20px;
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 126, 33) 0%,
+    rgb(188, 40, 40) 100%
+  );
+  justify-content: center;
+  align-items: center;
+}
+.Logo {
+  display: flex;
+  align-items: center;
+}
+
+.Logo img {
+  margin-right: 10px;
+}
+.imgfood .img img {
+  width: 150px;
+  height: auto;
+  margin: 6px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+button {
+  padding: 1em;
+  font-size: 10px;
+  margin: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+button:hover {
+  transform: translate(-2px);
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.total-price {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+.imgfood img {
+  margin: 0px;
+  width: 170px;
+  height: 170px;
+}
+.imgfood {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-item {
+  width: 15%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.addOrderButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.order-summary {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.order-list {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+#total-price {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0;
+}
+.menu-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.menu-item img {
+  display: block;
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+.menu-item h2 {
+  padding: 10px;
+  margin: 0;
+  color: #000000;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.menu-item p {
+  padding: 0 10px 10px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-item {
+    width: 45%;
+    margin-right: 10px;
+  }
+  .order-summary {
+    width: 100%;
+  }
+  .total-price {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
